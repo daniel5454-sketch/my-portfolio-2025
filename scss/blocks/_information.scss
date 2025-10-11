@@ -46,11 +46,13 @@
         font-weight: 300;
         transition: $transition-300;
 
+        @media (hover: hover) and (pointer: fine) {
         &:hover,
         &:focus-visible {
             color: $color-Light-Slate-Blue;
             transform: scale(1.05);
         }
+    }
 
         @include vp-767 {
             font-size: 12px;
@@ -114,4 +116,5 @@
         line-height: 16px;
         color: $color-Light-Slate-Blue;
     }
+
 }
