@@ -46,7 +46,7 @@
         font-weight: 300;
         transition: $transition-300;
 
-        @media (hover: hover) and (pointer: fine) {
+        @media (min-width: 768px) {
         &:hover,
         &:focus-visible {
             color: $color-Light-Slate-Blue;
@@ -118,3 +118,4 @@
     }
 
 }
+
