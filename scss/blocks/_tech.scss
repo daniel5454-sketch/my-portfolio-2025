@@ -1,0 +1,10 @@
+.tech {
+    background-color: $color-Tangerine-Yellow;
+    border-radius: 5px;
+    padding: 2px;
+
+    &--skillbox {
+        background-color: $color-skillbox;
+        color: $color-white;
+    }
+}

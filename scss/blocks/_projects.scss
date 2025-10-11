@@ -1,0 +1,88 @@
+.projects {
+    padding: 20px 0;
+
+    @include vp-767 {
+        padding: 0;
+    }
+
+    &__title {
+        margin: 0 0 20px;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+
+        @include vp-767 {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    &__note {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+        background: #F8F9FA;
+        border-left: 4px solid $color-blue;
+        border-radius: 0 8px 8px 0;
+        margin: 20px 0;
+
+        @include vp-767 {
+            flex-direction: column;
+        }
+    }
+
+    &__note-badge {
+        flex-shrink: 0;
+        padding: 4px 8px;
+        background: $color-blue;
+        color: $color-white;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    &__note-text {
+        margin: 0;
+        color: #333;
+        line-height: 1.5;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 20px;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+
+        @include vp-767 {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+    &__download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: $color-blue;font-size: 12px;
+        line-height: 14px;
+        font-weight: 200;
+        transition: $transition-300;
+
+        &:hover, &:focus-visible {
+        color: $color-Light-Slate-Blue;
+    }
+
+        
+    }
+
+    &__text {
+        display: block;
+        text-align: center;
+    }
+}
